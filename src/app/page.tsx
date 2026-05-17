@@ -137,9 +137,7 @@ export default async function Page() {
         <p className="mb-4 max-w-4xl text-sm leading-relaxed md:text-base">
           {dict.about.description}
         </p>
-        <h2 className="mb-3 text-xl font-heading">
-          {dict.about.teamTitle}
-        </h2>
+        <h2 className="mb-3 text-xl font-heading">{dict.about.teamTitle}</h2>
         <ul className="list-disc pl-6">
           <li className="mb-2 text-sm leading-relaxed md:text-base">
             <a
@@ -163,7 +161,7 @@ export default async function Page() {
           </li>
           <li className="mb-2 text-sm leading-relaxed md:text-base">
             <a
-              href="https://github.com/jumpstone"
+              href="https://github.com/henrymmey"
               target="_blank"
               className="underline underline-offset-2"
             >
