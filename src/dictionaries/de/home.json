@@ -41,13 +41,24 @@
         ]
       },
       {
-        "title": "3d-models",
+        "title": "3D Models",
         "description": "3D-Designdateien und CAD-Modelle für das Gehäuse.",
         "tags": ["KiCAD"],
         "links": [
           {
             "label": "Repository",
             "href": "https://github.com/Akku-Craft/3d-models"
+          }
+        ]
+      },
+      {
+        "title": "Hand Crank Generator",
+        "description": "Handkurbelgenerator mit OLED-Display zur Veranschaulichung der Stromkosten.",
+        "tags": ["Arduino", "C++", "OLED"],
+        "links": [
+          {
+            "label": "Repository",
+            "href": "https://github.com/Akku-Craft/hand-crank-generator"
           }
         ]
       }
