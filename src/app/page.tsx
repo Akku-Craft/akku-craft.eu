@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
-import GitHubSections from "@/components/github-sections";
+import { getGitHubData } from "@/lib/github";
 import SectionHeading from "@/components/section-heading";
+import TeamSection from "@/components/team-section";
 import SiteFooter from "@/components/site-footer";
 import { getRequestLocale } from "@/lib/i18n-server";
 import { localizedPath } from "@/lib/i18n";
@@ -86,6 +87,7 @@ function ProjectGrid({ projects }: { projects: ProjectCard[] }) {
 export default async function Page() {
   const locale = await getRequestLocale();
   const dict = await getDictionary(locale, "home");
+  const { profile, totalCommits } = await getGitHubData("akku-craft");
 
   return (
     <main className="relative mx-auto w-full max-w-6xl px-4 pb-0 md:px-8 md:pb-0">
@@ -100,30 +102,13 @@ export default async function Page() {
         <p className="max-w-3xl text-lg leading-relaxed md:text-xl">
           {dict.heroSubtitle}
         </p>
-      </section>
-
-      <section className="mb-8 rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow md:p-8">
-        <SectionHeading index="02" title={dict.getStarted.title} />
-        <p className="mb-5 max-w-3xl text-sm leading-relaxed md:text-base">
-          {dict.getStarted.text}
-        </p>
-
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <Link
-            href={localizedPath(locale, "/wiki")}
-            className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-main px-4 py-2 text-sm font-heading uppercase tracking-wide text-main-foreground shadow-shadow transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
-          >
-            {dict.getStarted.readWiki}
-            <ArrowUpRight className="size-4" />
-          </Link>
-          <Link
-            href={localizedPath(locale, "/contributing")}
-            className="inline-flex items-center justify-center gap-2 rounded-base border-2 border-border bg-background px-4 py-2 text-sm font-heading uppercase tracking-wide text-foreground shadow-shadow transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
-          >
-            {dict.getStarted.contribute}
-            <ArrowUpRight className="size-4" />
-          </Link>
-        </div>
+        {profile && (
+          <div className="mt-4 flex gap-5 text-xs text-main-foreground/70">
+            <span>{profile.public_repos} Repos</span>
+            <span>{profile.followers} Followers</span>
+            <span>{totalCommits?.toLocaleString() ?? "N/A"} Commits</span>
+          </div>
+        )}
       </section>
 
       <section
@@ -137,50 +122,17 @@ export default async function Page() {
         <p className="mb-4 max-w-4xl text-sm leading-relaxed md:text-base">
           {dict.about.description}
         </p>
-        <h2 className="mb-3 text-xl font-heading">{dict.about.teamTitle}</h2>
-        <ul className="list-disc pl-6">
-          <li className="mb-2 text-sm leading-relaxed md:text-base">
-            <a
-              href="https://github.com/0day-sudo"
-              target="_blank"
-              className="underline underline-offset-2"
-            >
-              Timon
-            </a>{" "}
-            - {dict.about.teamTimon}
-          </li>
-          <li className="mb-2 text-sm leading-relaxed md:text-base">
-            <a
-              href="https://github.com/keineahnungwasichhierreinschreibensoll"
-              target="_blank"
-              className="underline underline-offset-2"
-            >
-              Fabian
-            </a>{" "}
-            - {dict.about.teamFabian}
-          </li>
-          <li className="mb-2 text-sm leading-relaxed md:text-base">
-            <a
-              href="https://github.com/henrymmey"
-              target="_blank"
-              className="underline underline-offset-2"
-            >
-              Henry
-            </a>{" "}
-            - {dict.about.teamHenry}
-          </li>
-        </ul>
       </section>
+
+      <TeamSection dict={dict.team} />
 
       <section
         id="projects"
         className="mb-8 rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow"
       >
-        <SectionHeading index="04" title={dict.repos.title} />
+        <SectionHeading index="05" title={dict.repos.title} />
         <ProjectGrid projects={dict.repos.projects} />
       </section>
-
-      <GitHubSections organization="akku-craft" />
 
       <SiteFooter />
     </main>

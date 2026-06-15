@@ -1,19 +1,17 @@
 {
   "heroSubtitle": "So our future remains modular.",
-  "getStarted": {
-    "title": "Get Started",
-    "text": "Want to get involved? Read the wiki to understand the project, or jump straight in and contribute.",
-    "readWiki": "Read Wiki",
-    "contribute": "Learn how to contribute"
-  },
   "about": {
     "title": "About",
     "subtitle": "Sustainable • Modular • Decentralized",
     "description": "Akku-Craft is a universal, modular battery system designed to actively reduce electronic waste. Thanks to decentralized monitoring and precise cell balancing, the system guarantees a safe, long-lasting, and sustainable power supply for a wide variety of devices.",
-    "teamTitle": "The Team:",
-    "teamTimon": "Lead Developer",
-    "teamFabian": "Hardware Engineering, Prototyping",
-    "teamHenry": "Circuit Design, 3D Modeling & Developer"
+    "teamTitle": "The Team:"
+  },
+  "team": {
+    "title": "Team",
+    "timon": "Lead Developer",
+    "fabian": "Hardware Engineering, Prototyping",
+    "henry": "Circuit Design, 3D Modeling & Developer",
+    "tammo": "Hardware Engineering, Prototyping"
   },
   "repos": {
     "title": "Featured Repositories",
