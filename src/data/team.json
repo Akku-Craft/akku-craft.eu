@@ -1,0 +1,37 @@
+[
+  {
+    "priority": 1,
+    "name": "Timon",
+    "key": "timon",
+    "github": "https://github.com/0day-sudo",
+    "useFallback": true,
+    "role": "Lead Developer",
+    "displayOnLandingPage": true
+  },
+  {
+    "priority": 2,
+    "name": "Fabian",
+    "key": "fabian",
+    "github": "https://github.com/keineahnungwasichhierreinschreibensoll",
+    "useFallback": true,
+    "role": "Hardware Engineering, Prototyping",
+    "displayOnLandingPage": true
+  },
+  {
+    "priority": 3,
+    "name": "Henry",
+    "key": "henry",
+    "github": "https://github.com/henrymmey",
+    "useFallback": false,
+    "role": "Circuit Design, 3D Modeling & Developer",
+    "displayOnLandingPage": true
+  },
+  {
+    "priority": 4,
+    "name": "Tammo",
+    "key": "tammo",
+    "useFallback": true,
+    "role": "Hardware Engineering, Prototyping",
+    "displayOnLandingPage": true
+  }
+]

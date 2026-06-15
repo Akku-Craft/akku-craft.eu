@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { getGitHubData } from "@/lib/github";
 import SectionHeading from "@/components/section-heading";
 import TeamSection from "@/components/team-section";
+import { getLandingPageMembers } from "@/lib/team";
 import SiteFooter from "@/components/site-footer";
 import { getRequestLocale } from "@/lib/i18n-server";
 import { localizedPath } from "@/lib/i18n";
@@ -124,7 +125,7 @@ export default async function Page() {
         </p>
       </section>
 
-      <TeamSection dict={dict.team} />
+      <TeamSection title={dict.team.title} index="04" members={getLandingPageMembers()} />
 
       <section
         id="projects"
