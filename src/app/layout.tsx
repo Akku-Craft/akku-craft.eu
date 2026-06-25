@@ -106,6 +106,28 @@ const themeInitScript = `(() => {
   root.classList.toggle("dark", effectiveMode === "dark");
 })();`;
 
+const clarityInitScript = `(() => {
+  (function (c, l, a, r, i, t, y) {
+    if (l.getElementById("clarity-script")) {
+      return;
+    }
+    c[a] = c[a] || function () {
+      (c[a].q = c[a].q || []).push(arguments);
+    };
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = "https://www.clarity.ms/tag/xcj2jyummh?ref=npm";
+    t.id = "clarity-script";
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+  })(window, document, "clarity", "script", "xcj2jyummh");
+
+  window.clarity && window.clarity("consentv2", {
+    ad_storage: "denied",
+    analytics_storage: "denied",
+  });
+})();`;
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -134,6 +156,11 @@ export default async function RootLayout({
           id="theme-init"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: themeInitScript }}
+        />
+        <Script
+          id="clarity-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: clarityInitScript }}
         />
         <script
           type="application/ld+json"
