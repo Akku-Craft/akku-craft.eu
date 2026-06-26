@@ -22,13 +22,9 @@ Akku-Craft vereint drei Hauptbereiche:
 
 ## Das Team
 
-- **Timon** — Leitender Entwickler (C++ / BMS-Logik)
-- **Fabian** — Hardware-Entwicklung & Prototypenbau
-- **Henry** — Schaltungsdesign, 3D-Modellierung & GitHub-Verwaltung
+**Core Team**: Timon, Fabian, Henry
 
-## Partner
-
-Wir werden stolz von **Re.Lion.Bat.** (PreZero) unterstützt.
+Alle Teammitglieder auf der Teamseite: [akku-craft.eu/team](/de/team)
 
 ---
 

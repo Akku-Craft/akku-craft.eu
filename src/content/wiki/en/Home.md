@@ -22,13 +22,9 @@ Akku-Craft is a synergy of three main domains:
 
 ## The Team
 
-- **Timon** — Lead Developer (C++ / BMS Logic)
-- **Fabian** — Hardware Engineering & Prototyping
-- **Henry** — Circuit Design, 3D Modeling & GitHub Management
+**Core Team**: Timon, Fabian, Henry
 
-## Partners
-
-We are proud to be supported by **Re.Lion.Bat.** (PreZero).
+See all team members on the Team page: [akku-craft.eu/team](/en/team)
 
 ---
 
