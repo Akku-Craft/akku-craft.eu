@@ -116,7 +116,7 @@ export default async function Page() {
         id="about"
         className="mb-8 rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow"
       >
-        <SectionHeading index="03" title={dict.about.title} />
+        <SectionHeading index="02" title={dict.about.title} />
         <p className="mb-4 max-w-4xl text-sm leading-relaxed md:text-base">
           {dict.about.subtitle}
         </p>
@@ -125,13 +125,17 @@ export default async function Page() {
         </p>
       </section>
 
-      <TeamSection title={dict.team.title} index="04" members={getLandingPageMembers()} />
+      <TeamSection
+        title={dict.team.title}
+        index="03"
+        members={getLandingPageMembers()}
+      />
 
       <section
         id="projects"
         className="mb-8 rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow"
       >
-        <SectionHeading index="05" title={dict.repos.title} />
+        <SectionHeading index="04" title={dict.repos.title} />
         <ProjectGrid projects={dict.repos.projects} />
       </section>
 
