@@ -20,6 +20,11 @@ const socialLinks = [
     iconName: "github",
     label: "GitHub",
   },
+  {
+    href: "https://instagram.com/akku.craft",
+    iconName: "instagram",
+    label: "Instagram",
+  },
 ];
 
 function socialIconButtonClassName(isCompact: boolean) {

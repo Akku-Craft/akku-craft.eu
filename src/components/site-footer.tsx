@@ -108,6 +108,15 @@ export default async function SiteFooter() {
                   GitHub
                 </a>
               </li>
+              <li>
+                <a
+                  className="underline underline-offset-2"
+                  href="https://instagram.com/akku.craft"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
