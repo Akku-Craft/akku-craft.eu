@@ -16,9 +16,9 @@ The current battery industry is driven by planned obsolescence and proprietary d
 
 Akku-Craft is a synergy of three main domains:
 
-- **Hardware** ([Schematics](Schematics.md)): Circuit logic and power distribution.
-- **Mechanics** ([3D Models](Mechanical-Design.md)): The housing that keeps everything safe and portable.
-- **Firmware** ([ArduinoBMS](Firmware-ArduinoBMS.md)): The brain that monitors voltage, current, and temperature to ensure safe operation.
+- **Hardware** ([Schematics](wiki/schematics)): Circuit logic and power distribution.
+- **Mechanics** ([3D Models](wiki/mechanical-design)): The housing that keeps everything safe and portable.
+- **Firmware** ([ArduinoBMS](wiki/firmware-arduinobms)): The brain that monitors voltage, current, and temperature to ensure safe operation.
 
 ## The Team
 
@@ -32,6 +32,6 @@ See all team members on the Team page: [akku-craft.eu/team](/en/team)
 
 We recommend exploring the documentation in this order:
 
-1. Start with the **[Schematics](Schematics.md)** to understand the electrical foundation.
-2. Move on to the **[Mechanical Design](Mechanical-Design.md)** to see how the physical build comes together.
-3. Finish with the **[Firmware](Firmware-ArduinoBMS.md)** to understand the BMS logic.
+1. Start with the **[Schematics](wiki/schematics)** to understand the electrical foundation.
+2. Move on to the **[Mechanical Design](wiki/mechanical-design)** to see how the physical build comes together.
+3. Finish with the **[Firmware](wiki/firmware-arduinobms)** to understand the BMS logic.

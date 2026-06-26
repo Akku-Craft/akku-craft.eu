@@ -16,9 +16,9 @@ Die heutige Batteriebranche ist von geplanter Obsoleszenz und proprietären Desi
 
 Akku-Craft vereint drei Hauptbereiche:
 
-- **Hardware** ([Schaltpläne](Schematics.md)): Schaltungslogik und Leistungsverteilung.
-- **Mechanik** ([3D-Modelle](Mechanical-Design.md)): Das Gehäuse, das alles sicher und tragbar hält.
-- **Firmware** ([ArduinoBMS](Firmware-ArduinoBMS.md)): Das Gehirn, das Spannung, Strom und Temperatur überwacht und den sicheren Betrieb gewährleistet.
+- **Hardware** ([Schaltpläne](wiki/schematics)): Schaltungslogik und Leistungsverteilung.
+- **Mechanik** ([3D-Modelle](wiki/mechanical-design)): Das Gehäuse, das alles sicher und tragbar hält.
+- **Firmware** ([ArduinoBMS](wiki/firmware-arduinobms)): Das Gehirn, das Spannung, Strom und Temperatur überwacht und den sicheren Betrieb gewährleistet.
 
 ## Das Team
 
@@ -32,6 +32,6 @@ Alle Teammitglieder auf der Teamseite: [akku-craft.eu/team](/de/team)
 
 Wir empfehlen, die Dokumentation in dieser Reihenfolge zu erkunden:
 
-1. Beginne mit den **[Schaltplänen](Schematics.md)**, um die elektrische Grundlage zu verstehen.
-2. Weiter mit dem **[Mechanischen Design](Mechanical-Design.md)**, um zu sehen, wie der physische Aufbau zusammenkommt.
-3. Abschluss mit der **[Firmware](Firmware-ArduinoBMS.md)**, um die BMS-Logik zu verstehen.
+1. Beginne mit den **[Schaltplänen](wiki/schematics)**, um die elektrische Grundlage zu verstehen.
+2. Weiter mit dem **[Mechanischen Design](wiki/mechanical-Design)**, um zu sehen, wie der physische Aufbau zusammenkommt.
+3. Abschluss mit der **[Firmware](wiki/firmware-arduinobms)**, um die BMS-Logik zu verstehen.
