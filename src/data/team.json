@@ -13,7 +13,7 @@
     "name": "Fabian",
     "key": "fabian",
     "github": "https://github.com/keineahnungwasichhierreinschreibensoll",
-    "useFallback": true,
+    "useFallback": false,
     "role": "Hardware Engineering, Prototyping",
     "displayOnLandingPage": true
   },
