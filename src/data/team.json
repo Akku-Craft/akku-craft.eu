@@ -30,6 +30,7 @@
     "priority": 4,
     "name": "Tammo",
     "key": "tammo",
+    "github": "https://github.com/Tado16cl",
     "useFallback": true,
     "role": "Social Media, Hardware Engineering",
     "displayOnLandingPage": true
