@@ -14,7 +14,7 @@
     "key": "fabian",
     "github": "https://github.com/keineahnungwasichhierreinschreibensoll",
     "useFallback": false,
-    "role": "Hardware Engineering, Prototyping",
+    "role": "Hardware Engineering",
     "displayOnLandingPage": true
   },
   {
@@ -23,7 +23,7 @@
     "key": "henry",
     "github": "https://github.com/henrymmey",
     "useFallback": false,
-    "role": "Circuit Design, 3D Modeling, Developer",
+    "role": "Hardware Engineering, Developer",
     "displayOnLandingPage": true
   },
   {
@@ -31,7 +31,7 @@
     "name": "Tammo",
     "key": "tammo",
     "useFallback": true,
-    "role": "Hardware Engineering, Prototyping",
+    "role": "Hardware Engineering, Social Media",
     "displayOnLandingPage": true
   }
 ]
